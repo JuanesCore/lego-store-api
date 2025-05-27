@@ -1,46 +1,62 @@
-# 🧱 LEGO Productos - Proyecto MERN
+# LEGO Store API 🧱
 
-Este proyecto es una aplicación web completa para gestionar un catálogo de productos LEGO usando la pila MERN:
+Una API RESTful creada con Node.js, Express y MongoDB para gestionar productos de una tienda LEGO.
 
-- **MongoDB** para la base de datos.
-- **Express** como backend REST API.
-- **React + Vite** para el frontend.
-- **Node.js** como entorno del servidor.
+## 🚀 Funcionalidades
 
----
+- Crear, leer, actualizar y eliminar productos
+- Guardar imágenes de productos
+- Conexión con MongoDB
+- Middleware y controladores estructurados
 
-## 📦 Funcionalidades
+## 📦 Tecnologías usadas
 
-- Crear, listar, editar y eliminar productos.
-- Cada producto contiene:
-  - Nombre
-  - Descripción
-  - Precio
-  - Imagen (URL)
-- Conexión con MongoDB Atlas o local.
-- Interfaz limpia tipo catálogo con Bootstrap.
-- CRUD completo desde el frontend.
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- Multer (para imágenes)
+- Vite (frontend relacionado)
+- CORS, dotenv, etc.
 
----
+## 📁 Estructura del proyecto
 
-## 🚀 Instalación
+lego-store-api/
+├── controllers/
+├── models/
+├── routes/
+├── uploads/
+├── .env
+├── .gitignore
+├── package.json
+└── server.js
 
-### Requisitos previos
+bash
+Copy
+Edit
 
-- Node.js y npm instalados.
-- MongoDB instalado o cuenta en [MongoDB Atlas](https://www.mongodb.com/atlas/database).
-
-### Clonar el repositorio
+## 🛠 Instalación
 
 ```bash
-git clone https://github.com/tuusuario/lego-productos.git
-cd lego-productos
-1. Backend
-cd backend
+git clone https://github.com/JuanesCore/lego-store-api.git
+cd lego-store-api
 npm install
-node app.js
-2. Frontend
-cd ../frontend
-npm install
+▶️ Ejecución
+Crea un archivo .env en la raíz con esta estructura:
+
+ini
+Copy
+Edit
+PORT=3000
+MONGO_URI=tu_string_de_conexion
+Luego ejecuta:
+
+bash
+Copy
+Edit
 npm run dev
-🌐 Vista previa
+📬 Endpoints de ejemplo
+Método	Ruta	Descripción
+GET	/api/productos	Obtener todos los productos
+POST	/api/productos	Crear nuevo producto
+PUT	/api/productos/:id	Actualizar producto por ID
+DELETE	/api/productos/:id	Eliminar producto por ID
