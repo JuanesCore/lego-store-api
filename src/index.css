@@ -1,0 +1,90 @@
+:root {
+  --rojo-lego: #e3000b;
+  --amarillo-lego: #ffd500;
+  --negro-lego: #000000;
+  --gris-claro: #f4f4f4;
+  --blanco: #ffffff;
+
+  font-family: 'Arial', sans-serif;
+  color: var(--negro-lego);
+  background-color: var(--gris-claro);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--gris-claro);
+  color: var(--negro-lego);
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--rojo-lego) !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--blanco) !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: var(--amarillo-lego) !important;
+}
+
+/* BOTONES */
+button,
+.btn {
+  background-color: var(--amarillo-lego);
+  border: none;
+  color: var(--negro-lego);
+  font-weight: bold;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--rojo-lego);
+  color: var(--blanco);
+}
+
+/* ENCABEZADOS */
+h1, h2, h3 {
+  color: var(--rojo-lego);
+  font-weight: bold;
+}
+
+/* FORMULARIOS */
+input, textarea, select {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-bottom: 4px solid var(--amarillo-lego);
+  margin-bottom: 20px;
+}
+
+/* CARDS DE PRODUCTOS (si usas) */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
